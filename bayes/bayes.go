@@ -21,3 +21,8 @@ type WordStat struct {
 
 func (ws WordStat) CorrectedProb() float64 {
     if ws.Occurrencies < defaultThreshold {
+        return defaultProb
+    }
+    if ws.Prob == 1 {
+        return 0.99
+    }
