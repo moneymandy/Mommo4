@@ -18,3 +18,6 @@ type WordStat struct {
     Prob float64
     Occurrencies int
 }
+
+func (ws WordStat) CorrectedProb() float64 {
+    if ws.Occurrencies < defaultThreshold {
