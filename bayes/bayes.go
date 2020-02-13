@@ -26,3 +26,10 @@ func (ws WordStat) CorrectedProb() float64 {
     if ws.Prob == 1 {
         return 0.99
     }
+    if ws.Prob == 0 {
+        return 0.01
+    }
+    return ws.Prob
+}
+
+type WordsMap map[string]WordStat
