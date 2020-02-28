@@ -33,3 +33,8 @@ func (ws WordStat) CorrectedProb() float64 {
 }
 
 type WordsMap map[string]WordStat
+
+type BayesClassifier struct {
+    Words WordsMap
+    DocNumber int
+    DocFrequency float64
