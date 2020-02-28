@@ -38,3 +38,9 @@ type BayesClassifier struct {
     Words WordsMap
     DocNumber int
     DocFrequency float64
+    Name string
+}
+
+func NewBayesClassifier(name string) BayesClassifier {
+    return BayesClassifier{
+        Name: name,
