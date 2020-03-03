@@ -49,3 +49,8 @@ func NewBayesClassifier(name string) BayesClassifier {
 }
 
 func (b *BayesClassifier) Learn(text string, good bool) {
+    b.DocNumber += 1
+    if good {
+        b.DocFrequency = (float64(b.DocNumber - 1) * b.DocFrequency + 1.0) / float64(b.DocNumber)
+    } else {
+        b.DocFrequency = (float64(b.DocNumber - 1) * b.DocFrequency) / float64(b.DocNumber)
