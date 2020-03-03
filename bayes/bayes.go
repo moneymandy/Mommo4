@@ -44,3 +44,8 @@ type BayesClassifier struct {
 func NewBayesClassifier(name string) BayesClassifier {
     return BayesClassifier{
         Name: name,
+        Words: make(WordsMap),
+    }
+}
+
+func (b *BayesClassifier) Learn(text string, good bool) {
