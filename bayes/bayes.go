@@ -54,3 +54,16 @@ func (b *BayesClassifier) Learn(text string, good bool) {
         b.DocFrequency = (float64(b.DocNumber - 1) * b.DocFrequency + 1.0) / float64(b.DocNumber)
     } else {
         b.DocFrequency = (float64(b.DocNumber - 1) * b.DocFrequency) / float64(b.DocNumber)
+    }
+
+    words := filterWords(splitText(text))
+    uniqueWords := make(map[string]int)
+
+    // fmt.Printf("%#v %d\n", words, len(words))
+    for _, word := range words {
+        if _, ok := uniqueWords[word]; !ok {
+            uniqueWords[word] += 1
+        }
+    }
+
+    for word := range uniqueWords {
