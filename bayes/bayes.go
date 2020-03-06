@@ -67,3 +67,10 @@ func (b *BayesClassifier) Learn(text string, good bool) {
     }
 
     for word := range uniqueWords {
+        // fmt.Println(word)
+        wordStat, ok := b.Words[word]
+        if !ok {
+            // fmt.Println("Creating stats for word: ", word)
+            b.Words[word] = wordStat
+        }
+        wordStat.Occurrencies += 1
