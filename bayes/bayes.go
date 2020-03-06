@@ -74,3 +74,6 @@ func (b *BayesClassifier) Learn(text string, good bool) {
             b.Words[word] = wordStat
         }
         wordStat.Occurrencies += 1
+        if good {
+            wordStat.Prob = (wordStat.Prob * float64(wordStat.Occurrencies - 1) + 1.0) / float64(wordStat.Occurrencies)
+        } else {
