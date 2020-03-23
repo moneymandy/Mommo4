@@ -86,3 +86,5 @@ func (b *BayesClassifier) Learn(text string, good bool) {
 }
 
 func splitText(text string) []string {
+    text = strings.ToLower(text)
+    // s := regexp.MustCompile("[^\\p{L}\\-]+").Split(text, -1)
