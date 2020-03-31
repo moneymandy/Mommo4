@@ -95,3 +95,11 @@ func splitText(text string) []string {
 func filterWords(words []string) []string {
     res := make([]string, 0)
     for _, v := range words {
+        if len(v) > 2 {
+            res = append(res, v)
+        }
+    }
+    return res
+}
+
+func (b *BayesClassifier) Classify(text string) float64 {
