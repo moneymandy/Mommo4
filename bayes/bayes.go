@@ -91,3 +91,7 @@ func splitText(text string) []string {
     s := regexp.MustCompile("[^\\p{L}\\-\\p{N}]+").Split(text, -1)
     return s
 }
+
+func filterWords(words []string) []string {
+    res := make([]string, 0)
+    for _, v := range words {
