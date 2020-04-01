@@ -103,3 +103,6 @@ func filterWords(words []string) []string {
 }
 
 func (b *BayesClassifier) Classify(text string) float64 {
+    words := filterWords(splitText(text))
+    eta := 0.0
+    for _, word := range words {
