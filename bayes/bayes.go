@@ -106,3 +106,11 @@ func (b *BayesClassifier) Classify(text string) float64 {
     words := filterWords(splitText(text))
     eta := 0.0
     for _, word := range words {
+        wordStat, _ := b.Words[word]
+        // fmt.Println(wordStat.CorrectedProb())
+        eta += math.Log(1.0 - wordStat.CorrectedProb()) - math.Log(wordStat.CorrectedProb())
+        // fmt.Println(word, " prob: ", wordStat.CorrectedProb())
+    }
+    // fmt.Println(eta)
+
+    return 1.0 / (1.0 + math.Exp(eta))
