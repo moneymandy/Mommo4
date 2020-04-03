@@ -114,3 +114,7 @@ func (b *BayesClassifier) Classify(text string) float64 {
     // fmt.Println(eta)
 
     return 1.0 / (1.0 + math.Exp(eta))
+}
+
+func (b *BayesClassifier) ToJSON() ([]byte, error) {
+    return json.MarshalIndent(b, "", "    ")
