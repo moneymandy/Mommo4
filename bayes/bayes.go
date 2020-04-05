@@ -118,3 +118,9 @@ func (b *BayesClassifier) Classify(text string) float64 {
 
 func (b *BayesClassifier) ToJSON() ([]byte, error) {
     return json.MarshalIndent(b, "", "    ")
+}
+
+func (b *BayesClassifier) Save() error {
+    str, err := b.ToJSON()
+    // fmt.Println(string(str), err)
+    if err != nil {
