@@ -128,3 +128,5 @@ func (b *BayesClassifier) Save() error {
     }
 
     err = ioutil.WriteFile( b.filename(), str, 0666 )
+    return err
+}
