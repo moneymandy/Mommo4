@@ -124,3 +124,7 @@ func (b *BayesClassifier) Save() error {
     str, err := b.ToJSON()
     // fmt.Println(string(str), err)
     if err != nil {
+        return err
+    }
+
+    err = ioutil.WriteFile( b.filename(), str, 0666 )
