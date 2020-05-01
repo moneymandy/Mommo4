@@ -130,3 +130,9 @@ func (b *BayesClassifier) Save() error {
     err = ioutil.WriteFile( b.filename(), str, 0666 )
     return err
 }
+
+func (b *BayesClassifier) filename() string {
+    return dataPath + "/" + b.Name + ".json"
+}
+
+func LoadClassifier( filename string ) (BayesClassifier, error) {
