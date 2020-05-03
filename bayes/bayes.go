@@ -136,3 +136,9 @@ func (b *BayesClassifier) filename() string {
 }
 
 func LoadClassifier( filename string ) (BayesClassifier, error) {
+    var b BayesClassifier
+    str, err := ioutil.ReadFile(dataPath + "/" + filename + ".json")
+    if err != nil {
+        return NewBayesClassifier(filename), err
+    }
+    err = json.Unmarshal(str, &b)
