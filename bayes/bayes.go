@@ -142,3 +142,13 @@ func LoadClassifier( filename string ) (BayesClassifier, error) {
         return NewBayesClassifier(filename), err
     }
     err = json.Unmarshal(str, &b)
+    return b, err
+}
+
+func SetDataPath(path string) {
+    dataPath = path
+}
+
+func SetDefaultProb(prob float64) {
+    defaultProb = prob
+}
