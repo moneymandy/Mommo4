@@ -152,3 +152,7 @@ func SetDataPath(path string) {
 func SetDefaultProb(prob float64) {
     defaultProb = prob
 }
+
+func SetDefaultThreshold(threshold int) {
+    defaultThreshold = threshold
+}
