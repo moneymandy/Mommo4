@@ -2,4 +2,7 @@ package decisionTree
 
 import (
     "fmt"
-    "m
+    "math"
+)
+
+func
