@@ -5,4 +5,4 @@ import (
     "math"
 )
 
-func CalcShannonEnt
+func CalcShannonEntropy
