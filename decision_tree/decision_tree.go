@@ -6,4 +6,4 @@ import (
 )
 
 func CalcShannonEntropy(dataSet [][]int) float64 {
- 
+    n
