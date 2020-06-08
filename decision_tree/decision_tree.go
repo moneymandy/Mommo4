@@ -5,4 +5,5 @@ import (
     "math"
 )
 
-func CalcShannonEntropy(dataSet [][]int) float
+func CalcShannonEntropy(dataSet [][]int) float64 {
+ 
