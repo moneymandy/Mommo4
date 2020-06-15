@@ -6,4 +6,4 @@ import (
 )
 
 func CalcShannonEntropy(dataSet [][]int) float64 {
-    numEntries := len(da
+    numEntries := len(dataSet)
