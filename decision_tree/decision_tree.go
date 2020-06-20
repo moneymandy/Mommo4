@@ -7,4 +7,5 @@ import (
 
 func CalcShannonEntropy(dataSet [][]int) float64 {
     numEntries := len(dataSet)
-    labelCounts := make(map[int]
+    labelCounts := make(map[int]int)
+   
