@@ -10,4 +10,5 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
     labelCounts := make(map[int]int)
     for i := 0; i < numEntries; i++ {
         currentLabel := dataSet[i][len(dataSet[i]) - 1]
-        labelCounts[currentLa
+        labelCounts[currentLabel] += 1
+  
