@@ -13,4 +13,5 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
         labelCounts[currentLabel] += 1
     }
 
-    shannonEnt := 0.
+    shannonEnt := 0.0
+   
