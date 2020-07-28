@@ -15,4 +15,4 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
 
     shannonEnt := 0.0
     for _, count := range labelCounts {
-        prob := float64(count) / flo
+        prob := float64(count) / float64(nu
