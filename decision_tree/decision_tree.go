@@ -19,4 +19,4 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
         shannonEnt -= prob * math.Log2(prob)
     }
     // fmt.Println("Entropy: ", shannonEnt, "; dataSet: ", dataSet)
-    return 
+    return shannon
