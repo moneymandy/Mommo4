@@ -21,3 +21,5 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
     // fmt.Println("Entropy: ", shannonEnt, "; dataSet: ", dataSet)
     return shannonEnt
 }
+
+func S
