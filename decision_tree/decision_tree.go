@@ -22,4 +22,4 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
     return shannonEnt
 }
 
-func SplitDataSet(dat
+func SplitDataSet(dataSet 
