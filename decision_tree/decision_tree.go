@@ -23,4 +23,4 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
 }
 
 func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
-    var retDataSet [
+    var retDataSet [][]int
