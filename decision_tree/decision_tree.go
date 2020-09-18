@@ -25,4 +25,4 @@ func CalcShannonEntropy(dataSet [][]int) float64 {
 func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
     var retDataSet [][]int
     // fmt.Println("splitting: ", dataSet)
-    for _, featu
+    for _, featureVect
