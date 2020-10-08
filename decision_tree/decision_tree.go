@@ -26,4 +26,5 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
     var retDataSet [][]int
     // fmt.Println("splitting: ", dataSet)
     for _, featureVector := range dataSet {
-        if featureVector[axis] == valu
+        if featureVector[axis] == value {
+  
