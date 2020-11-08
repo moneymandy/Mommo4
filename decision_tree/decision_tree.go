@@ -29,4 +29,4 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
         if featureVector[axis] == value {
             reducedFeatVector := make([]int, len(featureVector) - 1)
             copy(reducedFeatVector, featureVector[:axis])
-            copy(red
+            copy(reducedFea
