@@ -31,4 +31,4 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
             copy(reducedFeatVector, featureVector[:axis])
             copy(reducedFeatVector[axis:], featureVector[axis+1:])
             retDataSet = append(retDataSet, reducedFeatVector)
-    
+        }
