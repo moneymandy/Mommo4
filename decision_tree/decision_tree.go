@@ -33,4 +33,4 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
             retDataSet = append(retDataSet, reducedFeatVector)
         }
     }
-    // fmt.Println("sp
+    // fmt.Println("split
