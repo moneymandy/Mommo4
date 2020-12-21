@@ -36,3 +36,6 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
     // fmt.Println("splitting result: ", retDataSet)
     // fmt.Println("splitting source: ", dataSet)
     return retDataSet
+}
+
+fu
