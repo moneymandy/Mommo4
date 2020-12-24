@@ -38,4 +38,4 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
     return retDataSet
 }
 
-func Choose
+func ChooseBestFea
