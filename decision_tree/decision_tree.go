@@ -39,4 +39,5 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
 }
 
 func ChooseBestFeatureToSplit(dataSet [][]int) int {
-    fmt.Println(dataSe
+    fmt.Println(dataSet)
+    nu
