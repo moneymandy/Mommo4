@@ -40,4 +40,4 @@ func SplitDataSet(dataSet [][]int, axis int, value int) [][]int {
 
 func ChooseBestFeatureToSplit(dataSet [][]int) int {
     fmt.Println(dataSet)
-    numFea
+    numFeatures := le
