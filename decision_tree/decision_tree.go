@@ -43,3 +43,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
     numFeatures := len(dataSet[0]) - 1
     baseEntropy := CalcShannonEntropy(dataSet)
     fmt.Println("base entropy: ", baseEntropy)
+    bes
