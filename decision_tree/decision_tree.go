@@ -47,4 +47,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
     bestFeature := -1
 
     for i := 0; i < numFeatures; i++ {
-        featLis
+        featList :
