@@ -52,4 +52,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
             featList[dataSet[row][i]] = true
         }
         newEntropy := 0.0
-        for val
+        for value := r
