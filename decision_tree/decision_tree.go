@@ -53,4 +53,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
         }
         newEntropy := 0.0
         for value := range featList {
-            subDataSet := SplitDataS
+            subDataSet := SplitDataSet(dataS
