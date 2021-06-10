@@ -55,4 +55,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
         for value := range featList {
             subDataSet := SplitDataSet(dataSet, i, value)
             // fmt.Println(i," ", value," ", subDataSet)
-            prob := f
+            prob := float64(l
