@@ -56,4 +56,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
             subDataSet := SplitDataSet(dataSet, i, value)
             // fmt.Println(i," ", value," ", subDataSet)
             prob := float64(len(subDataSet)) / float64(len(dataSet))
-            newEntropy += prob * CalcShannonEntropy(sub
+            newEntropy += prob * CalcShannonEntropy(subDataSe
