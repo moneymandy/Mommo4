@@ -59,3 +59,5 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
             newEntropy += prob * CalcShannonEntropy(subDataSet)
             // fmt.Println(newEntropy)
         }
+
+      
