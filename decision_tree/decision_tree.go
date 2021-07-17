@@ -60,4 +60,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
             // fmt.Println(newEntropy)
         }
 
-        infoGain :=
+        infoGain := b
