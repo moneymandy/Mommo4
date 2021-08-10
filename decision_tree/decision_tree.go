@@ -64,4 +64,5 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
         fmt.Println(i, ": ", infoGain)
         if infoGain >= bestInfoGain {
             bestInfoGain = infoGain
-            bestFeature =
+            bestFeature = i
+      
