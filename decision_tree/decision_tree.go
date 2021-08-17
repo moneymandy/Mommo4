@@ -67,4 +67,7 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
             bestFeature = i
         }
     }
-    return bestFe
+    return bestFeature
+}
+
+f
