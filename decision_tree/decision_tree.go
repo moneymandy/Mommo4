@@ -70,4 +70,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
     return bestFeature
 }
 
-f
+func Major
