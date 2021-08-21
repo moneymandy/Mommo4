@@ -70,4 +70,5 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
     return bestFeature
 }
 
-func MajorityCnt(classList []int) int
+func MajorityCnt(classList []int) int {
+ 
