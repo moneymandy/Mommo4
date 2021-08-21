@@ -71,4 +71,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
 }
 
 func MajorityCnt(classList []int) int {
-    classC
+    classCnt := m
