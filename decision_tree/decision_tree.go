@@ -73,4 +73,4 @@ func ChooseBestFeatureToSplit(dataSet [][]int) int {
 func MajorityCnt(classList []int) int {
     classCnt := make(map[int]int)
 
-    fo
+    for _
