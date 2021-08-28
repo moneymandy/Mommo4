@@ -74,4 +74,4 @@ func MajorityCnt(classList []int) int {
     classCnt := make(map[int]int)
 
     for _, v := range classList {
-        classC
+        classCnt[v] +=
