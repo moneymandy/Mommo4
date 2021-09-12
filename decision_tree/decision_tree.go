@@ -77,4 +77,4 @@ func MajorityCnt(classList []int) int {
         classCnt[v] += 1
     }
     maxV := -1
-    f
+    for v :
