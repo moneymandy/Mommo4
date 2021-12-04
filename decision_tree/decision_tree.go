@@ -80,4 +80,4 @@ func MajorityCnt(classList []int) int {
     for v := range classCnt {
         if classCnt[v] >= maxV {
             maxV = v
- 
+        }
