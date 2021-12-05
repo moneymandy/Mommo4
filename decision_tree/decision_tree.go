@@ -82,4 +82,4 @@ func MajorityCnt(classList []int) int {
             maxV = v
         }
     }
-  
+    return ma
