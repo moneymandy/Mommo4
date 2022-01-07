@@ -85,4 +85,4 @@ func MajorityCnt(classList []int) int {
     return maxV
 }
 
-func CreateTree(dataSet [][]int, labels []string, valueLabel
+func CreateTree(dataSet [][]int, labels []string, valueLabels [][]s
