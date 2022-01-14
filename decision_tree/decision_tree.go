@@ -87,4 +87,4 @@ func MajorityCnt(classList []int) int {
 
 func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
     // bestFeature := ChooseBestFeatureToSplit(dataSet)
-    val
+    valuesCo
