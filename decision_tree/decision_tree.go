@@ -89,4 +89,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
     // bestFeature := ChooseBestFeatureToSplit(dataSet)
     valuesColIndex := len(valueLabels) - 1
 
- 
+    t
