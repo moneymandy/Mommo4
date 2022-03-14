@@ -91,4 +91,5 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
 
     tree := NewTree()
     classList := make([]int, len(dataSet))
-    for i, v := range dataSe
+    for i, v := range dataSet {
+     
