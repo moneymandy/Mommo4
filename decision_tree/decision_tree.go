@@ -95,4 +95,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
         classList[i] = v[len(v)-1]
     }
     if len(dataSet[0]) == 1 {
-        tree.Label = valueLabels[valu
+        tree.Label = valueLabels[valuesCo
