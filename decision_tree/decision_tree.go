@@ -97,3 +97,6 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
     if len(dataSet[0]) == 1 {
         tree.Label = valueLabels[valuesColIndex][MajorityCnt(classList)]
         return tree
+    }
+
+  
