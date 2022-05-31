@@ -101,4 +101,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
 
     bestFeature := ChooseBestFeatureToSplit(dataSet)
     bestFeatLabel := labels[bestFeature]
-    uniqueFeatures := make(map[int]
+    uniqueFeatures := make(map[int]int
