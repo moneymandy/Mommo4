@@ -106,4 +106,5 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
         uniqueFeatures[v[bestFeature]] += 1
     }
     for value := range uniqueFeatures {
-        subLabels := make([]string, len(label
+        subLabels := make([]string, len(labels)-1)
+   
