@@ -110,4 +110,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
         copy(subLabels, labels[:bestFeature])
         copy(subLabels, labels[bestFeature+1:])
 
-        subValu
+        subValueLabels := ma
