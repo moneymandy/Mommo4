@@ -111,4 +111,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
         copy(subLabels, labels[bestFeature+1:])
 
         subValueLabels := make([][]string, len(valueLabels)-1)
-        copy(subV
+        copy(subValueL
