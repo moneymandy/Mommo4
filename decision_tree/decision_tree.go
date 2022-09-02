@@ -114,4 +114,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
         copy(subValueLabels, valueLabels[:bestFeature])
         copy(subValueLabels, valueLabels[bestFeature+1:])
 
-        subDataSet :
+        subDataSet := SplitD
