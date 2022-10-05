@@ -116,4 +116,4 @@ func CreateTree(dataSet [][]int, labels []string, valueLabels [][]string) Tree {
 
         subDataSet := SplitDataSet(dataSet, bestFeature, value)
         tree.Feature = bestFeatLabel
-        tree.SubTrees[valueLabels[bestFeature][value]] = CreateTree(subDataSet, subLabels, subValueLab
+        tree.SubTrees[valueLabels[bestFeature][value]] = CreateTree(subDataSet, subLabels, subValueLabel
