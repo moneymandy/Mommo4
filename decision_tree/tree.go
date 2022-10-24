@@ -1,3 +1,3 @@
 package decisionTree
 
-type Tr
+type Tree 
