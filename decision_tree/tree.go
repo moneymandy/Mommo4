@@ -1,4 +1,5 @@
 package decisionTree
 
 type Tree struct {
-    SubTrees map[string]Tre
+    SubTrees map[string]Tree
+    Labe
