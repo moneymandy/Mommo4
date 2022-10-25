@@ -1,3 +1,3 @@
 package decisionTree
 
-type Tree 
+type Tree struct {
