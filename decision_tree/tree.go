@@ -6,4 +6,4 @@ type Tree struct {
     Feature string
 }
 
-fun
+func Ne
