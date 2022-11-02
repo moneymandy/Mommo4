@@ -7,3 +7,4 @@ type Tree struct {
 }
 
 func NewTree() Tree {
+    tree :
