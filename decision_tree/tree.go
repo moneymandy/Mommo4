@@ -6,4 +6,4 @@ type Tree struct {
     Feature string
 }
 
-func NewTree() 
+func NewTree() Tree {
