@@ -7,4 +7,4 @@ type Tree struct {
 }
 
 func NewTree() Tree {
-    tree := Tree{ SubTrees: ma
+    tree := Tree{ SubTrees: make(map[
