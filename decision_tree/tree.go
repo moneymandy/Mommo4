@@ -11,4 +11,4 @@ func NewTree() Tree {
     return tree
 }
 
-fun
+func (t *Tr
