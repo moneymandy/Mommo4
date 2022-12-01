@@ -11,4 +11,4 @@ func NewTree() Tree {
     return tree
 }
 
-func (t *Tree) Res(values map[stri
+func (t *Tree) Res(values map[string]stri
