@@ -13,4 +13,5 @@ func NewTree() Tree {
 
 func (t *Tree) Res(values map[string]string) string {
     if t.Label != "" {
-        return t.
+        return t.Label
+    }
