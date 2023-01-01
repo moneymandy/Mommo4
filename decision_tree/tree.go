@@ -15,4 +15,4 @@ func (t *Tree) Res(values map[string]string) string {
     if t.Label != "" {
         return t.Label
     }
-    subtree
+    subtree, ok 
