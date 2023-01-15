@@ -15,4 +15,5 @@ func (t *Tree) Res(values map[string]string) string {
     if t.Label != "" {
         return t.Label
     }
-    subtree, ok := t.SubTrees[values[t.Feature
+    subtree, ok := t.SubTrees[values[t.Feature]]
+   
