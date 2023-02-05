@@ -17,4 +17,4 @@ func (t *Tree) Res(values map[string]string) string {
     }
     subtree, ok := t.SubTrees[values[t.Feature]]
     if ok {
-        return subtre
+        return subtree.Res(va
