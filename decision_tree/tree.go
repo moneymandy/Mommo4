@@ -19,4 +19,5 @@ func (t *Tree) Res(values map[string]string) string {
     if ok {
         return subtree.Res(values)
     }
-    return "
+    return ""
+}
