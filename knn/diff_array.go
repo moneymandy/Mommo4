@@ -7,3 +7,9 @@ type DiffArray struct {
 }
 
 func NewDiffArray(len int) DiffArray {
+    da := DiffArray{
+        make([]float64, len),
+        make([]int, len),
+    }
+    for i := 0; i < len; i++ {
+        da.Indices[i] = i;
