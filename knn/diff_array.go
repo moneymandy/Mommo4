@@ -13,3 +13,6 @@ func NewDiffArray(len int) DiffArray {
     }
     for i := 0; i < len; i++ {
         da.Indices[i] = i;
+    }
+    return da
+}
