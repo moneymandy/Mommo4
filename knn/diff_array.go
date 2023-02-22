@@ -16,3 +16,6 @@ func NewDiffArray(len int) DiffArray {
     }
     return da
 }
+
+func (da DiffArray) Len() int {
+    return len(da.Values)
