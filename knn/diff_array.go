@@ -19,3 +19,8 @@ func NewDiffArray(len int) DiffArray {
 
 func (da DiffArray) Len() int {
     return len(da.Values)
+}
+
+func (da DiffArray) Less(i, j int) bool {
+    return da.Values[i] < da.Values[j]
+}
