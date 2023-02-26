@@ -24,3 +24,8 @@ func (da DiffArray) Len() int {
 func (da DiffArray) Less(i, j int) bool {
     return da.Values[i] < da.Values[j]
 }
+
+func (da DiffArray) Swap(i, j int) {
+    da.Values[i], da.Values[j] = da.Values[j], da.Values[i]
+    da.Indices[i], da.Indices[j] = da.Indices[j], da.Indices[i]
+}
