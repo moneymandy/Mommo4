@@ -25,3 +25,9 @@ func ( kn *KnnClassifier ) Classify( inX []float64, k int ) (string, error) {
     if len(kn.dataSet) == 0 {
         return "", errors.New("Empty data set")
     }
+    diff := calcDiff(kn.normalizeInput(inX), kn.normalizedDataSet)
+    sort.Sort(diff)
+    // fmt.Println(diff)
+
+    return kn.vote(diff, k), nil
+}
