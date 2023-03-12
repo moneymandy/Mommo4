@@ -31,3 +31,9 @@ func ( kn *KnnClassifier ) Classify( inX []float64, k int ) (string, error) {
 
     return kn.vote(diff, k), nil
 }
+
+func calcDiff(inX []float64, dataSet [][]float64) DiffArray{
+    res := NewDiffArray(len(dataSet))
+    // fmt.Println(res)
+    for i, row := range dataSet {
+        // fmt.Printf("row: %#v %d\n", row, i)
