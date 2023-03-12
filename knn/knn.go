@@ -43,3 +43,7 @@ func calcDiff(inX []float64, dataSet [][]float64) DiffArray{
         res.Values[i] = math.Sqrt(res.Values[i])
     }
     return res
+}
+
+func ( kn KnnClassifier ) vote(diff DiffArray, k int) string {
+    m := make(map[string]int)
