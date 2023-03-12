@@ -37,3 +37,9 @@ func calcDiff(inX []float64, dataSet [][]float64) DiffArray{
     // fmt.Println(res)
     for i, row := range dataSet {
         // fmt.Printf("row: %#v %d\n", row, i)
+        for j := 0; j < len(inX); j++ {
+            res.Values[i] += math.Pow(inX[j]*inX[j] - row[j]*row[j], 2)
+        }
+        res.Values[i] = math.Sqrt(res.Values[i])
+    }
+    return res
