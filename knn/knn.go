@@ -47,3 +47,9 @@ func calcDiff(inX []float64, dataSet [][]float64) DiffArray{
 
 func ( kn KnnClassifier ) vote(diff DiffArray, k int) string {
     m := make(map[string]int)
+    for i := 0; i < int(math.Min( float64(len(diff.Values)), float64(k)) ); i++ {
+        m[kn.labels[diff.Indices[i]]] += 1
+    }
+
+    var max int
+    var res string
