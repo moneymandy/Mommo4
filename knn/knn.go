@@ -53,3 +53,14 @@ func ( kn KnnClassifier ) vote(diff DiffArray, k int) string {
 
     var max int
     var res string
+    for k, v := range m {
+        if v > max {
+            max = v
+            res = k
+        }
+    }
+
+    return res
+}
+
+func ( kn *KnnClassifier ) normalizeData() {
