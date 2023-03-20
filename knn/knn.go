@@ -64,3 +64,9 @@ func ( kn KnnClassifier ) vote(diff DiffArray, k int) string {
 }
 
 func ( kn *KnnClassifier ) normalizeData() {
+    // fmt.Println(kn.dataSet)
+    kn.normalizedDataSet = make([][]float64, len(kn.dataSet))
+    rows := len(kn.dataSet)
+    cols := len(kn.dataSet[0])
+
+    // fmt.Println(kn.mins)
