@@ -80,3 +80,8 @@ func ( kn *KnnClassifier ) normalizeData() {
         }
     }
 }
+
+func (kn *KnnClassifier) normalizeInput(inX []float64) []float64 {
+    res := make([]float64, len(inX))
+    for i := 0; i < len(inX); i++ {
+        res[i] = (inX[i] - kn.mins[i])/(kn.maxes[i] - kn.mins[i])
