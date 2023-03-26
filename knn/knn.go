@@ -70,3 +70,6 @@ func ( kn *KnnClassifier ) normalizeData() {
     cols := len(kn.dataSet[0])
 
     // fmt.Println(kn.mins)
+    // fmt.Println(kn.maxes)
+    for i := 0; i < rows; i++ {
+        kn.normalizedDataSet[i] = make([]float64, cols)
