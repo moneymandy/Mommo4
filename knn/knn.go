@@ -73,3 +73,10 @@ func ( kn *KnnClassifier ) normalizeData() {
     // fmt.Println(kn.maxes)
     for i := 0; i < rows; i++ {
         kn.normalizedDataSet[i] = make([]float64, cols)
+        for j := 0; j < cols; j++ {
+            if (kn.mins[j] != kn.maxes[j]) {
+                kn.normalizedDataSet[i][j] = (kn.dataSet[i][j] - kn.mins[j]) / (kn.maxes[j] - kn.mins[j])
+            }
+        }
+    }
+}
