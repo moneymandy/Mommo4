@@ -95,3 +95,8 @@ func ( kn *KnnClassifier ) calcMinMax() {
 
     kn.mins  = make([]float64, cols)
     kn.maxes = make([]float64, cols)
+
+    for i := 0; i < cols; i++ {
+        kn.mins[i] = kn.dataSet[0][i]
+        kn.maxes[i] = kn.dataSet[0][i]
+    }
