@@ -107,3 +107,8 @@ func ( kn *KnnClassifier ) calcMinMax() {
                 kn.mins[j] = kn.dataSet[i][j]
             }
             if kn.maxes[j] < kn.dataSet[i][j] {
+                kn.maxes[j] = kn.dataSet[i][j]
+            }
+        }
+    }
+}
