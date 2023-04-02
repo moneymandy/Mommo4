@@ -100,3 +100,10 @@ func ( kn *KnnClassifier ) calcMinMax() {
         kn.mins[i] = kn.dataSet[0][i]
         kn.maxes[i] = kn.dataSet[0][i]
     }
+
+    for i := 0; i < rows; i++ {
+        for j := 0; j < cols; j++ {
+            if kn.mins[j] > kn.dataSet[i][j] {
+                kn.mins[j] = kn.dataSet[i][j]
+            }
+            if kn.maxes[j] < kn.dataSet[i][j] {
