@@ -92,3 +92,6 @@ func (kn *KnnClassifier) normalizeInput(inX []float64) []float64 {
 func ( kn *KnnClassifier ) calcMinMax() {
     rows := len(kn.dataSet)
     cols := len(kn.dataSet[0])
+
+    kn.mins  = make([]float64, cols)
+    kn.maxes = make([]float64, cols)
